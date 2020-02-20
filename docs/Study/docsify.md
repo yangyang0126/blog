@@ -1,0 +1,145 @@
+
+
+# 使用docsity+github建立个人网站
+
+## 写在前面的话
+
+我之前根据网上的教程，用`Python`的`Django`搭建博客，需要写代码，申请域名和服务器，对于我这种代码小白来说，真的很艰难。后来群里大神推荐了`docsity`这个神器，一切都变得那么轻松可爱~
+
+## 安装docsify工具
+
+`docsity`中文官网：https://docsify.js.org/#/zh-cn/quickstart
+
+推荐安装 `docsify-cli` 工具，可以方便创建及本地预览文档网站。
+
+```bash
+npm i docsify-cli -g
+```
+
+在这之前，你要确保，你可以使用`npm`命令。如果你不能使用`npm`命令，你需要先安装`Node.js`。在[Node.js](https://nodejs.org/en/download/)官网下载**最新**的版本（太旧的版本，会不支持docsify，Windows又不能直接升级，就很麻烦）
+
+![image-20200220130532836](docsify.assets/image-20200220130532836.png)
+
+下载之后，直接一路`next`下去，直至安装结束，过程很快。
+
+然后重新打开命令提示符，输入`npm i docsify-cli -g`，这时候就没问题了。
+
+## 部署github
+
+在官网上，安装之后，就直接让大家初始化项目，生成doc文件了。但是我觉得，先部署github更方便。部署之后，直接在里面初始化项目。
+
+打开[github](https://github.com/)，右上角新建一个仓库。
+
+![image-20200220133335513](docsify.assets/image-20200220133335513.png)
+
+仓库命名的时候，选一个好听的名字，因为你后面生成的主页，就是这个名字。最好用英文。
+
+![image-20200220133632824](docsify.assets/image-20200220133632824.png)
+
+仓库建好之后，在本地电脑上，选择一个你喜欢的地方，克隆这个库。
+
+![image-20200220134609195](docsify.assets/image-20200220134609195.png)
+
+你可以在`Clone or download`中看到你应该克隆的网址。
+
+```
+git clone git@github.com:yangyang0126/blog.git
+```
+
+等待系统提示你输入密码，然后完成克隆
+
+## 初始化项目
+
+在命令提示符中，定位你刚刚克隆的文件夹位置。比如我定位到`D`盘的`blog`文件夹
+
+```
+D:\>cd blog
+```
+
+这时候，直接通过 `init` 初始化项目
+
+```
+docsify init ./docs
+```
+
+## 本地预览效果
+
+在你创建docs文件后，系统会提示你，可以输入`docsify serve ./docs`，来预览效果
+
+![image-20200220140254413](docsify.assets/image-20200220140254413.png)
+
+```
+docsify serve ./docs
+```
+
+输入之后，你会看到，系统给了你一个网址`http://localhost:3000`
+
+![image-20200220140440020](docsify.assets/image-20200220140440020.png)
+
+这时候，你就可以在浏览器输入这个网址，看看你现在的成果
+
+## 开始写文档
+
+初始化成功后，可以看到 `./docs` 目录下创建的几个文件
+
+- `index.html` 入口文件
+- `README.md` 会做为主页内容渲染
+- `.nojekyll` 用于阻止 GitHub Pages 会忽略掉下划线开头的文件
+
+直接编辑 `docs/README.md` 就能更新网站内容。
+
+具体关于侧边栏、封面等设置，大家都可以参考官网：https://docsify.js.org/#/zh-cn/quickstart
+
+这里就提一下，官网里所有的代码，都是写在`index.html` 中的。
+
+![image-20200220135354978](docsify.assets/image-20200220135354978.png)
+
+配套的`.md`文件，需要自己新建
+
+![image-20200220135451618](docsify.assets/image-20200220135451618.png)
+
+## 上传github
+
+在本地，你把`docs`下面的文档都写好了，那么我们就上传到`GitHub`上面去。
+
+还是在`blog`这个文件下，右击`Git Bash Here`
+
+![image-20200220135734941](docsify.assets/image-20200220135734941.png)
+
+检查文件夹状态
+
+```
+git status
+```
+
+添加所有修改的文件
+
+```
+git add .
+```
+
+给添加的文件注释,"***"里面写你觉得合适的注释
+
+```
+git commit -m "update 2020.02.20"
+```
+
+上传`GitHub`
+
+```
+git push origin master
+```
+
+这时候会让你输入密码的，你就输入（屏幕上并不会显示），然后回车
+
+## 生成网站
+
+进入GitHub，确认文件都传上去了。然后点击右上角的`Settings`
+
+![image-20200220140157087](docsify.assets/image-20200220140157087.png)
+
+把页面一直往下翻，找到`GitHub Pages`，将`source`选为`master branch/docs folder`，这时候，我会在上面看到一个网址，我的是 https://yangyang0126.github.io/blog/
+
+![image-20200220143923967](docsify.assets/image-20200220143923967.png)
+
+这个就是你做的网站了，是不是很神奇~

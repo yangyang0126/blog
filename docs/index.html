@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+
+<body>
+  <div id="app">正在努力加载中~</div>
+  <script>
+    window.$docsify = {
+	  
+      name: '',
+      repo: 'https://github.com/yangyang0126',
+	  coverpage: false,
+	  loadNavbar: true,
+	  // loadSidebar: false,
+	  // subMaxLevel: 1,
+	  maxLevel: 4,
+	  auto2top: true,
+	  logo: '_media/alarm.svg'
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  
+  
+
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '7b69754ebe665b178b8b',
+      clientSecret: '3de06941cb7061245da7332191e9a6753e8d31bd',
+      repo: 'yangyang0126.github.io',
+      owner: 'yangyang0126',
+      admin: ['yangyang0126'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+
+</body>
+</html>
