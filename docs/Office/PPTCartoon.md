@@ -1,0 +1,64 @@
+# 让你的开场弹跳起来 || PPT动画
+
+## 写在前面的话
+
+最近因为疫情的关系，很多APP都推出了免费课程，包括我一直很种草的一周进步，这次也推出了很多基础课程。免费学习，那必须学起来啊！
+
+## 小工具
+
+搞点小工具，干起活来，事半功倍！
+
+渐变色工具：[https://uigradients.com/](https://links.jianshu.com/go?to=https%3A%2F%2Fuigradients.com%2F)
+做PPT的时候，经常需要很好看的渐变色，从这个网页选一个颜色，下载后，直接用图片填充，超方便~
+
+![image-20200220183256613](PPTCartoon.assets/image-20200220183256613.png)
+
+islide插件：[https://www.islide.cc](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.islide.cc)
+这款插件内置了很多图标、模板、色系等，助你PPT一臂之力！
+
+![image-20200220183314691](PPTCartoon.assets/image-20200220183314691.png)
+
+视频转gif：[https://ezgif.com/video-to-gif/](https://links.jianshu.com/go?to=https%3A%2F%2Fezgif.com%2Fvideo-to-gif%2F)
+在PPT保存的时候，可以直接将PPT保存成视频格式，通过这个网址，可以将视频转换成gif，在线、免费、无水印~
+
+![image-20200220183326854](PPTCartoon.assets/image-20200220183326854.png)
+
+## PPT动画
+
+PPT动画一共分为四类，包括进入动画（40种）、强调动画（24种）、退出动画（40种）和路径动画（63种），其中进入动画和退出动画相对应。
+
+三大基础动画是动作路径（改变位置）、陀螺旋（改变角度）、放大缩小（改变大小）
+
+最简单的，1个进入动画+2个路径动画，可以实现一个夜晚的场景
+（我觉得我这个星星做的很好看，哈哈）
+
+- 星星闪烁：进入动画-翻转式由远及近，持续时间1.25s
+- 月亮：路径动画-弧形，方向向上，持续时间10s
+- 云朵：路径动画-直线，方向左右，持续时间5s
+
+![img](PPTCartoon.assets/17569167-48eec64e9de4f8c7.gif)
+
+用进入动画+路径动画/强调动画+退出动画，就可以做一个简单的logo进场。
+
+- 模拟物体坠落，进入动画-飞入->路径动画-向上->强调动画-放大
+- 线条发散：进入动画-擦除->路径动画-直线路径->退出动画-擦除
+- logo效果：进入动画-翻转式由远及近->强调动画-放大->路径动画-直线路径
+- 烟花效果：进入动画-基本缩放->退出动画-环状
+
+![img](PPTCartoon.assets/17569167-2e5f3f720fb58c45.webp)
+
+PPT动画用弹跳可以模拟物体坠落。弹跳的原理其实就是快速、小幅度的放大或缩小。进入动画选择自顶部飞入，然后添加多个强调-放大/缩小，就可以啦。
+
+![img](PPTCartoon.assets/17569167-e222da6c2e2ccc90.webp)
+
+用弹跳，可以做一个动态的字符。字符依次放大缩小，用一个小球，添加一个动作路径，就可以完成这样一个简单的介绍开场。
+
+![img](PPTCartoon.assets/17569167-f72ab95759f606a7.webp)
+
+## 最后
+
+我这边没有放PPT链接，也没有写详细教程，只是自己的笔记和总结。感兴趣的小伙伴，可以自己去【一周进步】的网页学习，现在是免费的，老师讲得很好。
+
+[一周进步送福利！100节课免费送给出不了门的你](https://links.jianshu.com/go?to=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIxMjI1MDcyMQ%3D%3D%26mid%3D2247519200%26idx%3D2%26sn%3D71e7e8eb93a0eb339990bc7e08e137cb%26chksm%3D974a32eea03dbbf8d516ab5f300ba923d1bfddefe1d15b3ceac19d22325afebc4505aa40b21b%26scene%3D21%23wechat_redirect)！
+
+生命不止，学习不停，一起加油呀~
