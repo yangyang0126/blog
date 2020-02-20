@@ -32,7 +32,7 @@ npm i docsify-cli -g
 
 ![image-20200220133335513](docsify.assets/image-20200220133335513.png)
 
-仓库命名的时候，选一个好听的名字，因为你后面生成的主页，就是这个名字。最好用英文。
+仓库命名的时候，选一个好听的名字，因为你后面生成的主页，就是这个名字。最好用英文。选择`Pulic`属性，`Private`属性不能发布成网页。
 
 ![image-20200220133632824](docsify.assets/image-20200220133632824.png)
 
@@ -42,7 +42,7 @@ npm i docsify-cli -g
 
 你可以在`Clone or download`中看到你应该克隆的网址。
 
-```
+```bash
 git clone git@github.com:yangyang0126/blog.git
 ```
 
@@ -52,13 +52,13 @@ git clone git@github.com:yangyang0126/blog.git
 
 在命令提示符中，定位你刚刚克隆的文件夹位置。比如我定位到`D`盘的`blog`文件夹
 
-```
+```bash
 D:\>cd blog
 ```
 
 这时候，直接通过 `init` 初始化项目
 
-```
+```bash
 docsify init ./docs
 ```
 
@@ -68,7 +68,7 @@ docsify init ./docs
 
 ![image-20200220140254413](docsify.assets/image-20200220140254413.png)
 
-```
+```bash
 docsify serve ./docs
 ```
 
@@ -108,25 +108,25 @@ docsify serve ./docs
 
 检查文件夹状态
 
-```
+```bash
 git status
 ```
 
 添加所有修改的文件
 
-```
+```bash
 git add .
 ```
 
 给添加的文件注释,"***"里面写你觉得合适的注释
 
-```
+```bash
 git commit -m "update 2020.02.20"
 ```
 
 上传`GitHub`
 
-```
+```bash
 git push origin master
 ```
 

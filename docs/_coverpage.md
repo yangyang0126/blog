@@ -4,12 +4,10 @@
 
 
 
-* 一个磁共振工程师
-* 一个
-* Not build static html files
 
 
 
- [GitHub](https://github.com/docsifyjs/docsify/) 
 
-[Get Started](#quick-start)
+
+
+[Get Started](README.md)
