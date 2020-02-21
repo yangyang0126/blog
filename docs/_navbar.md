@@ -10,7 +10,7 @@
   
   * [Office](Office/0.md)  
   
-  * Other
+  * [Other](Study/0.md)
   
     
   
