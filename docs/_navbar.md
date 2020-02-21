@@ -4,17 +4,17 @@
   
 * Study
   
-  * [Python](Python/README.md)  
+  * [Python](Python/0.md)  
   
-  * [MRI](MRI/README.md)  
+  * [MRI](MRI/0.md)  
   
-  * [Office](Office/README.md)  
+  * [Office](Office/0.md)  
   
-  * [Other](Office/README.md) 
+  * Other
   
     
   
-* [Life](Life/README.md)
+* [Life](Life/0.md)
   
   
 

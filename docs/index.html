@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  
 </head>
 
 <body>
@@ -16,23 +17,26 @@
     window.$docsify = {
 	  
       name: 'Blog',
-      repo: 'https://github.com/yangyang0126',
-	  coverpage: true,
-	  loadNavbar: true,
-	  // loadSidebar: false,
+      repo: 'https://github.com/yangyang0126',  //开启github图标
+	  coverpage: true,  // 开启封面页
+	  loadNavbar: true,  //开启导航栏
+	  // loadSidebar: false,  // 自定义侧边栏
 	  // subMaxLevel: 1,
 	  maxLevel: 4,  // 最大支持渲染的标题层级
-	  auto2top: true,
+	  auto2top: true,  //自动返回文章顶部
 	  // logo: '_media/alarm.svg'
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  
+  <!--插入“代码复制”模块-->
   <script src="//unpkg.com/docsify-copy-code"></script>
   
   
-
+  <!--插入“gitalk评论”模块-->
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="js/md5.min.js"></script>
   <script>
     const gitalk = new Gitalk({
       clientID: '1c87e3daf746459b2bf6',
@@ -40,13 +44,15 @@
       repo: 'blog',
       owner: 'yangyang0126',
       admin: ['yangyang0126'],
-      // facebook-like distraction free mode
-      distractionFreeMode: false
+      id: location.pathname,      // Ensure uniqueness and length less than 50
+	  distractionFreeMode: false  // Facebook-like distraction free mode
     })
   </script>
   
+  <!--代码高亮-->
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
-
+  <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+  
 </body>
 </html>

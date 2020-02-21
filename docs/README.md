@@ -2,19 +2,19 @@
 
 > Learning by doing. Learning by teaching.
 
-## Python
-
-## Office 
-
-### PPT 
+## [Python](Python/0.md)
 
 
 
-## Study
+## [Office](Office/0.md) 
 
-[使用docsity+github建立个人网站](Study/docsify.md)
 
-## MRI
 
-## Life
+## [Study](Study/0.md)
+
+
+
+## [MRI](MRI/0.md)
+
+## [Life](Life/0.md)
 
