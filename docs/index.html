@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>洋阳</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div id="app">正在努力加载中~</div>
+  <div id="app">小洋阳正在努力加载中</div>
   <script>
     window.$docsify = {
 	  
@@ -26,10 +26,26 @@
 	  // subMaxLevel: 4,  // 生成目录的最大层级
 	  maxLevel: 3,  // 最大支持渲染的标题层级
 	  auto2top: true,  //自动返回文章顶部
-	  // logo: '_media/alarm.svg'
+	  search: 'auto', // default
+	  // 增加搜索功能
+	  search: {
+		  maxAge: 86400000, // Expiration time, the default one day
+		  paths: [], // or 'auto'
+		  placeholder: 'Search',	 
+		  noData: 'No Results!',	  
+		  // Headline depth, 1 - 6
+		  depth: 2,
+		  }
+		  
+	  // logo: '_media/alarm.svg'	  
+	
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+  <!--插入“搜索”模块-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   
   <!--插入“代码复制”模块-->
   <script src="//unpkg.com/docsify-copy-code"></script>
@@ -55,6 +71,7 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-csharp.js"></script>
   
 
 </body>
