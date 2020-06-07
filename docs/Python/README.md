@@ -20,9 +20,9 @@ Github：[Github开源Python项目](https://github.com/vinta/awesome-python)
 
 在线资源：[艰苦学习Python](https://docs.scrapy.org/en/latest/intro/tutorial.html)
 
-### [2、基础教程](Python/basic.md)
+### 2、基础教程
 
-包括Python安装和运行（默认版本和Spyder安装）、入门语句、字符串、列表、循环、元组、字典、数据类型转换、条件判断IF、函数、模块
+[基础教程](Python/basic.md)：包括Python安装和运行（默认版本和Spyder安装）、入门语句、字符串、列表、循环、元组、字典、数据类型转换、条件判断IF、函数、模块
 
 [优秀的库推荐](Python/14.md)
 
@@ -31,8 +31,6 @@ Github：[Github开源Python项目](https://github.com/vinta/awesome-python)
 ### 3、jupyter
 
 [jupyter notebook 更换路径](Python/24.md)
-
-https://docs.scrapy.org/en/latest/intro/tutorial.html)
 
 
 
@@ -118,7 +116,9 @@ https://docs.scrapy.org/en/latest/intro/tutorial.html)
 
 ## 七、图像处理
 
-[批量抠图](Python/30.md)
+[批量抠图、填充背景色](Python/30.md)
+
+[PIL图片处理](Python/34.md)：批量剪裁、拼图
 
 ## 八、小工具
 
